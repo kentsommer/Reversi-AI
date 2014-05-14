@@ -71,7 +71,7 @@ def maxPlay(board):
 
 
 def miniMaxValue(board, maxply, best):
-	#Implements MiniMax with Alpha-Beta Prunning for Reversi AI
+	#Implements MiniMax for Reversi AI
 	possibleMoves = getValidMoves(board, computerTile)
 	if maxply == 0 or isTerminal(board):
 		score = getAltScoreOfBoard(board) #[computerTile]
