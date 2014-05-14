@@ -1,4 +1,4 @@
-Reversi-MiniMax--optional-Alpha-Beta-Prunning-and-custom-Evaluation-Function-
+Reversi with MiniMax (Optional Alpha Beta) and Custom Evaluation Function
 =============================================================================
 
 Requirments: Python 3 (wow that is a short list of requirments...)
