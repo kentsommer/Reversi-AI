@@ -96,19 +96,12 @@ def miniMax(board, maxply):
 	#try each move
 	for x, y in possibleMoves:
 		move = [x, y]
-		print("Current move is: ", move)
 		dupeBoard = getBoardCopy(board)
 		makeMove(dupeBoard, computerTile, x, y)
 		value = -1 * miniMaxValue(dupeBoard, maxply, 0)
-		print("Value: ", value)
 		#update best
 		if best is None or value > best[0]:
-			#print tests
-			if best is None:
-				print("best is none")
-			#end of print tests
 			best = (value, move)
-			print("Best: ", best)
 	return best
 
 def alphaBetaValue(board, maxply, alpha, beta):
@@ -482,7 +475,7 @@ def getComputerMove(board, computerTile):
 			print("Placed on a corner")
 			return [x, y]
 
-	return miniMax(board, 4)[1]
+	return miniMax(board, 3)[1]
 	#return alphaBeta(board, 3)[1]
     #return maxPlay(board)
 
